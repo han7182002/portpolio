@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'NanumSquare_acB';
+    src: url('../fonts/NanumSquare_acB.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 's-core-dream-extralight';
+    src: url('../fonts/scdream2-webfont.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
