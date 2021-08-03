@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 's-core-dream-thin';
+    src: url('../fonts/scdream1-webfont.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 's-core-dream-extralight';
+    src: url('../fonts/scdream2-webfont.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 's-core-dream-light';
+    src: url('../fonts/scdream3-webfont.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 's-core-dream-regular';
+    src: url('../fonts/scdream4-webfont.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 's-core-dream-medium';
+    src: url('../fonts/scdream6-webfont.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 's-core-dream-bold';
+    src: url('../fonts/scdream7-webfont.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 's-core-dream-extrabold';
+    src: url('../fonts/scdream8-webfont.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 's-core-dream-heavy';
+    src: url('../fonts/scdream9-webfont.woff') format('woff2');
+         
+    font-weight: normal;
+    font-style: normal;
+}

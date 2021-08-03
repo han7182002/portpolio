@@ -1,0 +1,18 @@
+.clearfix{content: '';display: block;clear: both;}
+
+.visualWrap{width: 1920px; margin: 0 auto; height: 600px;}
+.figure{width: 100%; height: 500px; background: url(../sub_img/sub_bg_01.jpg)no-repeat center; }
+
+.content_sub{
+    position: relative;
+    width: 1260px;
+    margin: 27px auto 0;
+    margin-bottom: 40px;
+}
+.content_sub .container{width: 1260px;margin: 0 auto; height: 3100px; margin-top: 80px;}
+.content_sub .container img{vertical-align: top;}
+
+
+.footerWrap{width: 100%;height: 380px; background: #1e191d;}
+
+div.footer{background: url(../img/footer/img1.png)no-repeat center; width: 100%; height: 380px;}
