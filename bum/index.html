@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<title>범어아트스트리트 클론코딩</title>
+	<meta name="description" content="무한히 성장하는 퍼블리셔">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="사승한 포트폴리오">
+    <meta property="og:url" content="//tmdgks718.cafe24.com/LUSHP">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="사승한 포트폴리오">
+    <meta property="og:description" content="무한히 성장하는 퍼블리셔">
+    <meta property="og:image" content="//tmdgks718.cafe24.com/LUSHP/img/main/SEO_LOGO.jpg">
+
+	<link rel="shortcut icon" type="image/svg" href="/intro/img/LOGO_favicon.svg" id="favicon">
+	
+	<link rel="stylesheet" href="/bum/css/base.css">
+	<link rel="stylesheet" href="/bum/css/common.css">
+	<link rel="stylesheet" href="/bum/js/jquery-ui.css">
+	<link rel="stylesheet" href="/bum/css/layout.css">
+	<link rel="stylesheet" href="/bum/css/board.css">
+	<link rel="stylesheet" href="//fonts.googleapis.com/font.css">
+	<link rel="stylesheet" type="text/css" href="/bum/css/main.css?ver=1.1">
+	<link rel="stylesheet" href="/bum/css/slick.css">
+
+	<script src="/bum/js/jquery-1.12.2.min.js"></script>
+	<script src="/bum/js/jquery.bxslider.js"></script>
+	<script src="/bum/js/jquery-ui.js"></script>
+	<script src="/bum/js/custom.js"></script>
+	<script src="/bum/js/base.js"></script>
+	<script src="/bum/js/slick.js"></script>
+	
+	<script src="/bum/js/TweenMax.min.js"></script>
+	<script src="/bum/js/ScrollToPlugin.min.js"></script>
+	<script>var ml = { timelines: {} };</script>
+
+	<script src="/bum/js/jquery.paroller.js"></script>
+	<script src="/bum/js/jquery-inertiaScroll.js"></script>
+	<script src="/bum/js/anime.min.js"></script>
+	
+
+
+</head>
+
+<body>
+	<div id="wrap">
+		<header id="header">
+			<h1>
+				<a href="#" title=""><img src="/bum/images/common/logo.svg" alt="회사홈페이지" /></a>
+			</h1>
+			<div class="area_util">		
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">LOCATION</a></li>
+				</ul>		
+				<div id="nav-icon4">
+					<div>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		
+			<!-- gnb -->
+			<a href="#" class="btn_menu">
+				Menu open
+				<span></span>
+				<span></span>
+				<span></span>
+				
+				
+				</a>
+			<nav>
+				<ul class="gnb">
+					<li><a href="#" id="about">범어 아트스트리트</a>
+						<ul>
+							<li><a href="#" id="sub01">인사말</a></li>
+							<li><a href="#" id="sub02">운영목적</a></li>
+							<li><a href="#" id="sub03">오시는 길</a></li>
+							<li><a href="#" id="sub04">행정서비스 헌장</a></li>
+						</ul>
+					</li>
+					<li><a href="#">시설안내</a>
+						<ul>
+							<li><a href="#">스페이스</a></li>
+							<li><a href="#">스튜디오</a></li>
+							<li><a href="#">벽면갤러리</a></li>
+							<li><a href="#">문화예술교육체험실</a></li>
+						</ul>
+					</li>
+					<li><a href="#" id="board_product2" data-header-on="board_product2">범어아트클래스</a>
+						<ul>
+							<li><a href="#" id="board_product2" data-header-on="board_product2">교육프로그램 신청</a></li>
+							<li><a href="#" id="board_product2" data-header-on="board_product2">교육프로그램 조회</a></li>
+						</ul>
+					</li>
+		
+					<li><a href="#" id="product">행사일정</a>
+						<ul>
+							<li><a href="#" id="board_product1" data-header-on="board_product1">행사일정안내</a></li>
+						</ul>
+					</li>
+					<li><a href="#">알림마당</a>
+						<ul>
+							<li><a href="#" id="board_notice" data-header-on="board_notice">언론보도</a></li>
+							<li><a href="#" id="board_qna" data-header-on="board_qna">공지사항</a></li>
+							<li><a href="#" id="board_qna" data-header-on="board_qna">자주묻는 질문</a></li>
+						</ul>
+					</li>
+					<li><a href="#">갤러리</a></li>		
+				</ul>
+			</nav>	
+			<!-- //gnb -->
+		
+			<!-- all menu -->
+			<div class="area_sitemapWrap">
+				<div class="inr">
+					<h2>범어 아트스트리트 <em>전체메뉴</em></h2>
+					<div class="area_sitemap"></div>
+					<a href="#" class="btn_basic02 v2">
+						<i>교육프로그램</i>
+						<img src="/bum/images/common/arr_basic01.svg"/>
+					</a>
+					<a href="#" class="btn_basic02 v2">
+						<i>공지사항</i>
+						<img src="/bum/images/common/arr_basic01.svg"/>
+					</a>
+				</div>
+			</div>
+			<!-- //all menu -->
+		
+		</header>
+		<!-- //header -->		
+
+		<!-- popup -->
+		<a href="javascript:" id="btn_popup">
+			<i>팝업<br/>닫기</i>
+			<i>팝업<br/>보기</i>
+		</a>	
+		<div class="area_popup">
+			<div class="bx-wrapper" style="max-width: 100%;">
+				<div class="bx-viewport" aria-live="polite"
+					style="width: 100%; overflow: hidden; position: relative; height: 564px;">
+					<ul class="list" style="width: auto; position: relative;">
+						<li aria-hidden="true"
+							style="float: none; list-style: none; position: absolute; width: 445px; z-index: 0; display: none;">
+							<a href="#" target="_blank"><img src="/bum/images/main/popup14.jpg"></a></li>
+						<li aria-hidden="false"
+							style="float: none; list-style: none; position: absolute; width: 445px; z-index: 50; display: list-item;">
+							<a href="#"><img src="/bum/images/main/popup15.jpg"></a></li>
+						<li aria-hidden="true"
+							style="float: none; list-style: none; position: absolute; width: 445px; z-index: 0; display: none;">
+							<a href="#" target="_blank"><img src="/bum/images/main/popup07.jpg"></a></li>
+					</ul>
+				</div>
+				<div class="bx-has-controls-direction">
+					<div class="bx-controls-direction"><a class= href="">Prev</a><a class=
+							href="">Next</a></div>
+				</div>
+			</div>
+			<div id="bx-pager">
+				<div class="wrapper">
+					<ul>
+						<li><a data-slide-index="0" href="" class="">범어아트스트리트<br>인스타그램</a></li>
+						<li><a data-slide-index="1" href="" class="active">범어아트클래스</a></li>
+						<li><a data-slide-index="2" href="" class="">코로나 바이러스<br> 정보확인</a></li>
+					</ul>
+				</div>
+			</div>
+			<a href="javascript:;" id="btn_close"><i>X</i></a>
+		</div>
+		<!-- //popup -->
+
+		<!-- visual -->
+		<div class="area_visual" style="background-image:url(/bum/images/main/img_visualbg.jpg)">
+			<div class="bx-wrapper" style="max-width: 100%;">
+				<div class="bx-viewport" aria-live="polite"
+					style="width: 100%; overflow: hidden; position: relative; height: 1029px;">
+					<ul class="list" style="width: auto; position: relative;">
+						<li data-visual="00" aria-hidden="false" class="active-slide"
+							style="float: none; list-style: none; position: absolute; width: 1903px; z-index: 50; display: block;">
+							<div class="wrap">
+								<h4 class="txt_border">범어아트스트리트 <br>범어길프로젝트 4부</h4>
+								<h4><b>Music festical rebirth</b></h4>
+								<em>2020. 12. 08. ~2020. 12. 27.</em>
+								<p><b>장소</b>범어아트스트리트 스페이스1~2</p>
+								<a href="#" class="btn_basic">
+									<span>
+										<i>
+											MORE
+											<img src="/bum/images/common/arr_basic01.svg">
+										</i>
+									</span>
+									<div>
+										<div class="blobs">
+											<div class="blob"></div>
+											<div class="blob"></div>
+											<div class="blob"></div>
+										</div>
+									</div>
+								</a>
+								<div>
+									<img src="/bum/images/main/img_visual20201208.jpg">
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<a class="scrolldown">
+				<i>Scroll</i>
+				<span></span>
+			</a>
+		</div>
+		<!-- //visual -->
+
+		<section id="container" class="main">
+			<article class="area_program">
+				<!-- <img src="/images/main/ob_program02.png" class="ob05"/> -->
+				<div class="wrap">
+					<h2>Program</h2>
+					<p>범어 아트 스트리트에서 준비한 다양한 교육프로그램을 만나보세요</p>
+		
+					<!-- 프로그램 신청현황 최신글 3개 노출 -->
+					<div class="box_program active">
+						<a href="#">
+							<div>
+								<!-- 프로그램 썸네일이미지 -->
+								<i style="background-image:url(/bum/upload/program/koweb_apply/51758_1.jpg)"></i>
+								<!-- 프로그램 명 -->
+								<div class="text_box">
+									<h5>12. 19(토) 공연으로 만나는 세계 명작</h5>
+									<ul class="list_info">
+										<!-- 프로그램 날짜 -->
+										<li><i>날짜</i>
+											<p>12/19</p>
+										</li>
+										<!-- 프로그램 시간 -->
+										<li><i>시간</i>
+											<p>14 : 00</p>
+										</li>
+										<!-- 프로그램 장소 -->
+										<li><i>장소</i>
+											<p>범어아트스트리트 스페이스 3</p>
+										</li>
+									</ul>
+									<ul class="list_personnel">
+										<!-- 총 모집인원수 -->
+										<li><em>총 모집인원</em>1명</li>
+										<!-- 현재 신청가능 인원수 -->
+										<!-- 신청가능인원수가 0명일때 li에 클레스.none 추가-->
+										<li id="person1" class="none"><em>현재 신청마감</em>-3명</li>
+									</ul>
+		
+								</div>
+								<script type="text/javascript">
+									var num = "-3";
+
+									if (num == 0) {
+										$("#person" + "1").addClass("none");
+									}
+								</script>
+							</div>
+						</a>
+					</div>
+		
+					<div class="box_program active">
+						<a href="#">
+							<div>
+								<!-- 프로그램 썸네일이미지 -->
+								<i style="background-image:url(/bum/upload/program/koweb_apply/11945_2.jpg)"></i>
+								<!-- 프로그램 명 -->
+								<div class="text_box">
+									<h5>12.19(토) 감성음악콘서트</h5>
+									<ul class="list_info">
+										<!-- 프로그램 날짜 -->
+										<li><i>날짜</i>
+											<p>12/19</p>
+										</li>
+										<!-- 프로그램 시간 -->
+										<li><i>시간</i>
+											<p>12 : 30</p>
+										</li>
+										<!-- 프로그램 장소 -->
+										<li><i>장소</i>
+											<p>범어아트스트리트 스페이스 3</p>
+										</li>
+									</ul>
+									<ul class="list_personnel">
+										<!-- 총 모집인원수 -->
+										<li><em>총 모집인원</em>1명</li>
+										<!-- 현재 신청가능 인원수 -->
+										<!-- 신청가능인원수가 0명일때 li에 클레스.none 추가-->
+										<li id="person2" class="none"><em>현재 신청마감</em>-5명</li>
+									</ul>
+		
+								</div>
+								<script type="text/javascript">
+									var num = "-5";
+
+									if (num == 0) {
+										$("#person" + "2").addClass("none");
+									}
+								</script>
+							</div>
+						</a>
+					</div>
+		
+					<div class="box_program active">
+						<a href="#">
+							<div>
+								<!-- 프로그램 썸네일이미지 -->
+								<i
+									style="background-image:url(/bum/upload/program/koweb_apply/22703_KakaoTalk20201201154628843.jpg)"></i>
+								<!-- 프로그램 명 -->
+								<div class="text_box">
+									<h5>12.19(토) 스트리트 페인팅</h5>
+									<ul class="list_info">
+										<!-- 프로그램 날짜 -->
+										<li><i>날짜</i>
+											<p>12/19</p>
+										</li>
+										<!-- 프로그램 시간 -->
+										<li><i>시간</i>
+											<p>14:30 - 15:30</p>
+										</li>
+										<!-- 프로그램 장소 -->
+										<li><i>장소</i>
+											<p>범어아트스트리트 스튜디오 1번 앞 복도</p>
+										</li>
+									</ul>
+									<ul class="list_personnel">
+										<!-- 총 모집인원수 -->
+										<li><em>총 모집인원</em>0명</li>
+										<!-- 현재 신청가능 인원수 -->
+										<!-- 신청가능인원수가 0명일때 li에 클레스.none 추가-->
+										<li id="person3" class="none"><em>현재 신청마감</em>0명</li>
+									</ul>
+		
+								</div>
+								<script type="text/javascript">
+									var num = "0";
+
+									if (num == 0) {
+										$("#person" + "3").addClass("none");
+									}
+								</script>
+							</div>
+						</a>
+					</div>
+		
+		
+					<a href="#" class="btn_basic02 v2">
+						<i>VIEW MORE</i>
+						<img src="/bum/images/common/arr_basic01.svg">
+					</a>
+				</div>
+			</article>
+		
+			<div class="area_exhibition">
+				<div class="box">
+					<div class="slick_active">
+					</div>
+			
+					<!-- 전시일정 표출 -->
+					<div class="slick_list">
+						<div>
+							<a href="#">
+								<!-- 전시 썸네일 -->
+								<i style="background-image:url(/bum/upload/board_event/Sign3.jpg)" class="img_list"></i>
+								<span class="txt_slider">
+									<em>
+										<i>전시일정</i>
+										2021 범어아트스트리트 지역예술인 기획초대전&lt;인류세 ANTHROPOCENE_Save Our Planet&gt; </em>
+								</span>
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<!-- 전시 썸네일 -->
+								<i style="background-image:url(/bum/upload/board_event/저용량포스터.jpg)" class="img_list"></i>
+								<span class="txt_slider">
+									<em>
+										<i>전시일정</i>
+										<!-- 전시 제목 -->
+										2020 범어아트스트리트 범어길프로젝트 4부 &lt;The Music Festival:Rebirth&gt; </em>
+								</span>
+							</a>
+			
+						</div>
+						<div>
+			
+							<!-- 해당 전시게시물로 이동 -->
+			
+							<a href="#">
+								<!-- 전시 썸네일 -->
+								<i style="background-image:url(/bum/upload/board_event/32288_WE.jpg)" class="img_list"></i>
+								<span class="txt_slider">
+									<em>
+										<i>전시일정</i>
+										<!-- 전시 제목 -->
+										범어아트스트리트 장애인 예술지원프로젝트 &lt; WE 展&gt; </em>
+								</span>
+							</a>
+			
+						</div>
+						<div>
+			
+							<!-- 해당 전시게시물로 이동 -->
+			
+							<a href="#">
+								<!-- 전시 썸네일 -->
+								<i style="background-image:url(/bum/upload/board_event/홈페이지.jpg)" class="img_list"></i>
+								<span class="txt_slider">
+									<em>
+										<i>전시일정</i>
+										<!-- 전시 제목 -->
+										범어아트스트리트 입주예술인 릴레이전&lt;정경주, 김민주&gt; </em>
+								</span>
+							</a>
+			
+						</div>
+						<div>
+			
+							<!-- 해당 전시게시물로 이동 -->
+			
+							<a href="#">
+								<!-- 전시 썸네일 -->
+								<i style="background-image:url(/bum/upload/board_event/입주예술인리렐이전.jpg)" class="img_list"></i>
+								<span class="txt_slider">
+									<em>
+										<i>전시일정</i>
+										<!-- 전시 제목 -->
+										범어아트스트리트 입주예술인 릴레이 그룹전 2부 </em>
+								</span>
+							</a>
+			
+						</div>
+						<div>
+			
+							<!-- 해당 전시게시물로 이동 -->
+			
+							<a href="#">
+								<!-- 전시 썸네일 -->
+								<i style="background-image:url(/bum/upload/board_event/99025_범어길3부.jpg)" class="img_list"></i>
+								<span class="txt_slider">
+									<em>
+										<i>전시일정</i>
+										<!-- 전시 제목 -->
+										2020 범어아트스트리트 범어길프로젝트 3부 &lt;안녕, 초록씨&gt; </em>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+								
+				<div class="tit">
+					<h2>Exhibition</h2>
+					<i>행사·전시안내</i>
+					<a href="#" class="btn_basic v2">
+						<span>
+							<i>
+								MORE
+								<img src="/bum/images/common/arr_basic02.svg"/>
+							</i>
+						</span>
+						<div>
+							<div class="blobs">
+								<div class="blob"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+		
+			<!-- 본문 -->
+			<div id="content">
+				<article class="area_info">
+					<div class="wrap">
+		
+						<div class="area_writer box" data-speed="8" data-margin="180"
+							style="transform: translate3d(0px, 4.16px, 0px);">
+							<img src="/bum/images/main/img_writer.jpg">
+							<div class="tit">
+								<h2>Writer</h2>
+								<i>입주작가</i>
+								<a href="#" class="btn_basic">
+									<span>
+										<i>
+											MORE
+											<img src="/bum/images/common/arr_basic01.svg">
+										</i>
+									</span>
+									<div>
+										<div class="blobs">
+											<div class="blob"></div>
+											<div class="blob"></div>
+											<div class="blob"></div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="area_space box" data-speed="3" data-margin="110"
+							style="transform: translate3d(0px, 44.06px, 0px);">
+							<h3>
+								<svg xmlns="//www.w3.org/2000/svg" viewBox="0 0 336.8 42.6">
+									<path
+										d="M33.4.5v24H27.5V15.1H20.1v7.7H.5V2.9H6.4V8.4h7.9V2.9h5.8v7.4h7.4V.5ZM5.8,26.2H33.4V41.5H5.8ZM14.3,13H6.4v5.1h7.9ZM11.7,36.9H27.6v-6H11.7Z"
+										fill="none" stroke="#222"></path>
+									<path
+										d="M74.9.5V42.1H69V20.3H62.1C61.5,28.2,57.2,33,51.5,33S40.8,27.3,40.8,18.2,45.3,3.4,51.5,3.4s9.8,4.6,10.6,12H69V.5ZM56.6,18.2c0-6.1-2.1-9.4-5.1-9.4s-5.1,3.3-5.1,9.4,2.1,9.4,5.1,9.4S56.6,24.3,56.6,18.2Z"
+										fill="none" stroke="#222"></path>
+									<path
+										d="M113.8,18.2c0,9.1-4.7,14.8-10.9,14.8S92,27.3,92,18.2,96.6,3.4,102.9,3.4,113.8,9.1,113.8,18.2Zm-5.7,0c0-6.1-2.2-9.4-5.2-9.4s-5.2,3.3-5.2,9.4,2.1,9.4,5.2,9.4S108.1,24.3,108.1,18.2Zm22.1,2.9h-6V42h-5.9V.5h5.9V16.2h6Z"
+										fill="none" stroke="#222"></path>
+									<path
+										d="M170.7,32.4v4.8H133.2V32.4Zm-4-5.8H137.6V3.6h28.8V8.3H143.6v4.4h21.8v4.6H143.6v4.6h23.1Z"
+										fill="none" stroke="#222"></path>
+									<path
+										d="M212.1,32.1v4.8H174.6V32.1ZM208.3,25c-7.2-1.4-12.5-5.4-15.2-10.7-2.7,5.3-7.9,9.3-15.1,10.7l-2.5-4.9c9.3-1.6,14.5-8.2,14.5-14.2V3h6.3V5.9c0,6.1,5.1,12.6,14.5,14.2Z"
+										fill="none" stroke="#222"></path>
+									<path
+										d="M253.5,32.4v4.8H216V32.4Zm-4-5.8H220.4V3.6h28.8V8.3H226.4v4.4h21.8v4.6H226.4v4.6h23.1Z"
+										fill="none" stroke="#222"></path>
+									<path
+										d="M265.6,27.5A98.3,98.3,0,0,0,283,26.2l.6,4.8a110.4,110.4,0,0,1-20.3,1.4h-3.7v-17H273V8.8H259.5V4.1h19.6v16H265.6ZM291.8.5V42.1h-5.9V.5Z"
+										fill="none" stroke="#222"></path>
+									<path
+										d="M336.3,32.4v4.8H298.8V32.4Zm-4-5.8H303.2V3.6H332V8.3H309.2v4.4H331v4.6H309.2v4.6h23.1Z"
+										fill="none" stroke="#222"></path>
+								</svg>
+								우리의 출·퇴근길이<br>
+								예술의 공간으로
+							</h3>
+							<div class="inr">
+								<img src="/bum/images/main/img_space.jpg">
+								<div class="tit">
+									<h2>space</h2>
+									<i>공간안내</i>
+									<a href="#" class="btn_basic v2">
+										<span>
+											<i>
+												MORE
+												<img src="/bum/images/common/arr_basic02.svg">
+											</i>
+										</span>
+										<div>
+											<div class="blobs">
+												<div class="blob"></div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+		
+				6 <article class="area_notice">
+					<div class="wrap">
+						<h2>notice</h2>
+		
+						<ul class="active">
+							<!-- 공지사항 최신글 6개 표출 -->
+							<li>
+								<a href="#">
+									<div>
+										<!-- 게시글 제목 -->
+										<em>2021 범어아트스트리트 오픈갤러리 상반기 정기대관 공모 안내</em>
+										<!-- 게시글 내용 -->
+										<p>
+										</p>
+										<!-- 게시한 날짜 & 새로운글 등록시 뉴아이콘 -->
+										<span>2021-04-26<i>NEW</i></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div>
+										<!-- 게시글 제목 -->
+										<em>2021 범어아트스트리트 청년 키움프로젝트 &lt;커브2410&gt; 전시 공모 안내</em>
+										<!-- 게시글 내용 -->
+										<p>대구문화재단 공고 제2021-59호
+											&nbsp;
+											&nbsp;
+		
+		
+		
+											2021 범어아트스트리트 청년 키움프로젝트
+											&lt;커브2410&gt; 전시 공모
+		
+		
+		
+											&nbsp;
+											&nbsp;
+											(재)대구문화재단 범어아트스트리트에서는 지역의 유망한 청년 예술가의 창의적, 도전적 예술 활동에 적극 지원하고자 ‘커브2410’전시를 개최하며 참여
+											작가를 공모합니다. 자신의 예술 세계를 선보이며 다양하고 새로운 전시를 계획하는 청년 예술가분들의 적극적인 관심과 참여를 부탁드립니다.
+											&nbsp;
+		
+											2021년 4월 15일
+		
+											대구문화재단 대표
+		
+											&nbsp;
+											1. 공모 개요
+											○ 공 모 명 : 2021 범어아트스트리트 청년 키움프로젝트 &lt;커브2410&gt; 전시 공모
+											○ 공모분야 : 시각예술(평면, 설치, 조각 등)
+											○ 선정인원 : 4명 ※공모 후 적격자 없을 시 섭외로 진행
+											○ 전시일정 : 2021. 5월 25일(화) ~ 2021. 12월 26일(일) / 4회 진행(1인 7주 예정)
+		
+		
+		
+											※ 최종선정 시 회차별 전시 일정 공지
+											○ 전시장소 : 범어아트스트리트 스페이스 5
+											○ 응모자격
+											·공고일 기준 주소지가 대구이며 지역을 기반으로 활동하는 예술가
+											·만 39세 이하, 시각예술분야 개인전 경력이 없는 청년 작가
+											※공고일 기준 대학교 재학생은 제외
+											&nbsp;
+											&nbsp;
+											2. 공고 및 접수
+											○ 공고기간 : 2021. 4. 15.(목) ~ 4. 28.(수) / 14일간
+											&nbsp;
+											3. 심사 및 발표 일정
+											○ 선정 방향
+											· 범어아트스트리트(스페이스5) 공간 특성(지하도, 2면 유리벽 등)에 대한 이해도가 높고 자신만의 색깔을 보여줄 수 있으며 
+											&nbsp;
+											※ 상기 일정은 창작·창업지원팀(범어) 상황에 따라 변경될 수 있음
+											4. 지원 내용
+											○ 선정 예술가당 400천원(작품제작비, 운송설치비 등 일체경비 포함
+											&nbsp;
+											5. 응시자 주의사항
+											○ 제출 서류에서 의도적인 허위 사실이 발견될 경우 선정을 취소할 수 있습니다.
+											○ 공모와 관련하여 기타 궁금한 사항은 창작·창업지원팀[범어](☎ 053-430-1257)로 문의하시기 바랍니다.
+											&nbsp;
+											&nbsp;
+										</p>
+										<!-- 게시한 날짜 & 새로운글 등록시 뉴아이콘 -->
+										<span>2021-04-15</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div>
+										<!-- 게시글 제목 -->
+										<em>범어아트스트리트의 애칭을 지어주세요! 범어아트스트리트 &lt;애칭 공모전&gt;</em>
+										<!-- 게시글 내용 -->
+										<p>
+										</p>
+										<!-- 게시한 날짜 & 새로운글 등록시 뉴아이콘 -->
+										<span>2021-03-30</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div>
+										<!-- 게시글 제목 -->
+										<em>2021년도 대구예술발전소 입주작가 공모 안내</em>
+										<!-- 게시글 내용 -->
+										<p>
+											&nbsp;</p>
+										<!-- 게시한 날짜 & 새로운글 등록시 뉴아이콘 -->
+										<span>2021-01-08</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div>
+										<!-- 게시글 제목 -->
+										<em>12.27.(일) &lt;엄마,아빠랑 신나는 범어데이!&gt; 취소안내</em>
+										<!-- 게시글 내용 -->
+										<p>대구문화재단이 운영하는 범어아트스트리트는 대구광역시코로나19방역지침에 따라,
+											12월 27일(일) 예정되어있던 ‘ 엄마, 아빠랑 신나는 범어데이! ’가 취소되었습니다.
+											&nbsp;
+											범어데이에 소중한 시간을 내셔서 신쳥해주신 가족분들께 죄송합니다.
+											&nbsp;
+											대구시민여러분들의 안전을 위한 조치로 앞으로 더 나은 문화예술프로그램으로 찾아 뵙겠습니다.
+											&nbsp;
+											감사합니다.
+										</p>
+										<!-- 게시한 날짜 & 새로운글 등록시 뉴아이콘 -->
+										<span>2020-12-22</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div>
+										<!-- 게시글 제목 -->
+										<em>12.27.(일) &lt;엄마,아빠랑 신나는 범어데이!&gt; 신청하기</em>
+										<!-- 게시글 내용 -->
+										<p>
+											범어아트스트리트의 대표 가족문화체험 프로그램!
+											&lt;엄마, 아빠랑 신나는 범어데이!&gt;가 12월27일(일)에 진행됩니다!
+		
+											올 한 해 동안 &lt;범어데이&gt;에 관심가져주시고,
+											함께 참여해 주신 많은 가족분들께 진심으로 감사드립니다.
+		
+											올해 마지막까지 예술로 따뜻한 연말 보내실 수 있도록
+											범어아트스트리트가 노력하겠습니다!
+		
+		
+											[신청링크 클릭]
+											https://forms.gle/RgBtepG3M1B9bUaZ7
+		
+											&nbsp;
+										</p>
+										<!-- 게시한 날짜 & 새로운글 등록시 뉴아이콘 -->
+										<span>2020-12-20</span>
+									</div>
+								</a>
+							</li>
+							
+						</ul>
+						<a href="#" class="btn_basic02 v2">
+							<i>VIEW MORE</i>
+							<img src="/bum/images/common/arr_basic01.svg">
+						</a>
+					</div>
+				</article>
+			</div>
+			<!-- //본문 -->
+		
+			<!-- 오브젝트 -->
+			<div class="ob_main">
+				<img src="/bum/images/main/ob_notice01.png" class="ob01">
+				<img src="/bum/images/main/ob_contents01.png" class="ob03" data-paroller-factor="0.1" data-paroller-factor-lg="0.4"
+					data-paroller-factor-md="0.3" data-paroller-factor-sm="-0.2" data-paroller-factor-xs="-0.1"
+					data-paroller-type="foreground" data-paroller-direction="horizontal"
+					style="transform: translateX(17px); transition: transform 0s linear 0s; will-change: transform;">
+				<img src="/bum/images/main/ob_contents02.png" class="ob04 paroller-example"
+					style="transform: translateX(-138px); transition: transform 0s linear 0s; will-change: transform;">
+			</div>
+			<!-- //오브젝트 -->
+		
+		</section>
+
+
+		<!-- footer -->
+		<footer id="footer">
+			<!-- 오브젝트 -->
+			<div class="ob_main">
+				<img src="/bum/images/main/ob_notice02.png" class="ob02">
+			</div>
+			<!-- //오브젝트 -->
+			<a href="#wrap" title="" class="btn_top">
+				<img src="/bum/images/common/btn_scrollTop.svg" alt="">
+			</a>
+			<div class="inr">
+				<div class="area_address">
+					<img src="/bum/images/common/logo.svg">
+					<adress>
+						<p>대구광역시 수성구 달구벌대로 지하 2410 지하철 2호선 범어역 지하도 8번출구
+						</p>
+						<ul>
+							<li><i>CALL</i>053-430-1267~1268</li>
+							<li><i>FAX</i>053-756-1248</li>
+						</ul>
+					</adress>
+				</div>
+				<div class="area_sns">
+					<div class="custom-select">
+						<select>
+							<option value="0">family site</option>
+							<option value="1">대구문화재단</option>
+						</select>
+						
+					</div>
+					<ul>
+						<li><a href="#" target="_blank"><img src="/bum/images/common/icon_sns01.png"></a></li>
+						<li><a href="#" target="_blank"><img src="/bum/images/common/icon_sns02.png"></a></li>
+						<li><a href="#" target="_blank"><img src="/bum/images/common/icon_sns03.png"></a></li>
+					</ul>
+				</div>
+				<span>Copyright © 2019 범어아트스트리트. All rights reserved<a href="#" alt="대구홈페이지제작 대구웹 문의">.</a></span>
+			</div>
+		</footer>
+		<!-- footer -->
+	</div>
+	<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+	<script type="text/javascript">
+		if (!wcs_add) var wcs_add = {};
+		wcs_add["wa"] = "4cf0bad0b250b0";
+		wcs_do();
+	</script>
+	<script>
+		// Wrap every letter in a span
+		$('.ml3').each(function () {
+			$(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+		});
+
+		ml.timelines["ml3"] = anime.timeline({ loop: false })
+			.add({
+				targets: '.ml3 .letter',
+				opacity: [0, 1],
+				easing: "easeInOutQuad",
+				duration: 2250,
+				delay: function (el, i) {
+					return 150 * (i + 1)
+				}
+			}).add({
+				targets: '.ml3',
+				opacity: 1,
+				duration: 1000,
+				easing: "easeOutExpo",
+				delay: 1000
+			});
+	</script>
+	
+
+</body>
+
+</html>
