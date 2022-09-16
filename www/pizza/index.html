@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도미노 피자</title>
+    
+    <meta name="description" content="무한히 성장하는 퍼블리셔">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="사승한 포트폴리오">
+    <meta property="og:url" content="//tmdgks718.cafe24.com/LUSHP">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="사승한 포트폴리오">
+    <meta property="og:description" content="무한히 성장하는 퍼블리셔">
+    <meta property="og:image" content="//tmdgks718.cafe24.com/LUSHP/img/main/SEO_LOGO.jpg">
+
+	<link rel="shortcut icon" type="image/svg" href="/intro/img/LOGO_favicon.svg" id="favicon">
+
+    <link rel="stylesheet" href="/pizza/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link rel="stylesheet" href="/pizza/css/xeicon.css">
+    <link rel="stylesheet" href="/pizza/css/swiper.min.css">
+    <link rel="stylesheet" href="/pizza/css/style.css?ver=<?php echo time(); ?>">
+    <script src="/pizza/js/swiper.min.js"></script>
+    <script src="/pizza/js/jquery-2.1.1.min.js"></script>
+    <script src="/pizza/js/common.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+<div class="main_home" id="wrap">
+    <div id="header">
+        <header class="header">
+            <div class="wrapper">
+                <h1 class="logo"><a href="#"></a></h1>
+            </div>
+            <div class="gnb d-none">
+                <ul class="depth">
+                    <li class="depth01 strong"><a href="#">바로주문</a></li>
+                    <li class="depth01 strong2"><a href="#">메뉴</a></li>
+                    <li class="depth01 strong3"><a href="#">매장</a></li>
+                    <li class="depth01 strong4"><a href="#">마이페이지</a></li>
+                </ul>
+            </div>
+            <div class="hd_btn d-none">
+                <a href="#" class="btn_cart">
+                    <strong class="top_cart_num">6</strong>
+                    <span class="blind">장바구니</span>
+                </a>
+                <button type="button" class="btn_gnb">
+                    <i></i>
+                    <span class="blind">gnb열기</span>
+                </button>
+            </div>
+            
+            <div class="depth_sitemap" style="display: none;">
+                <div class="sitemap_wrap">
+                    <ul class="clearfix list">
+                        <li class="depth01">
+                            <div class="desc_wrap">
+                                <div class="title_bx">
+                                    <a href="#">메뉴</a>
+                                </div>
+                                <div class="depth02_box">
+                                    <ul>
+                                        <li>
+                                            <a href="#">피자</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">1인용피자</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">특가세트</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">샐러드&사이드</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="depth01">
+                            <div class="desc_wrap">
+                                <div class="title_bx">
+                                    <a href="#">
+                                        <p class="tit">매장</p>
+                                    </a>
+                                </div>
+                                <div class="depth02_box">
+                                    <ul>
+                                        <li>
+                                            <a href="#">매장찾기</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">뷔페매장</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">매장전용메뉴</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="depth01">
+                            <div class="desc_wrap">
+                                <div class="title_bx">
+                                    <a href="#">
+                                        <p class="tit">
+                                            마이페이지
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="depth02_box">
+                                    <ul>
+                                        <li>
+                                            <a href="#">마이페이지</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <button class="mo_gnb_btn on">
+                <i class="xi-bars"></i>
+            </button>
+            <div class="mo_gnb_wrap on" style="display: none;">
+                <div class="head_bx">
+                    <button class="mo_gnb_close_btn">
+                        <i class="xi-close"></i>
+                    </button>
+                </div>
+                <a href="#" class="logo_m"><img src="/pizza/img/header/logo1.png" alt=""></a>
+                <div class="gnb_box">
+                    <div class="wrap">
+                        <ul class="depth">
+                            <ul class="list">
+                                <li class="depth01">
+                                    <div class="desc_wrap">
+                                        <div class="title_bx">
+                                            <a href="#">
+                                                <p>바로주문</p>
+                                            </a>
+                                        </div>
+                                        <div class="depth02_box">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">바로주문</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="depth01">
+                                    <div class="desc_wrap">
+                                        <div class="title_bx">
+                                            <a href="#">
+                                                <p>메뉴</p>
+                                            </a>
+                                        </div>
+                                        <div class="depth02_box">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">피자</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">1인용피자</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">특가세트</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">샐러드&사이드</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="depth01">
+                                    <div class="desc_wrap">
+                                        <div class="title_bx">
+                                            <a href="#">
+                                                <p>매장</p>
+                                            </a>
+                                        </div>
+                                        <div class="depth02_box">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">매장찾기</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">뷔페매장</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">매장전용메뉴</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="depth01">
+                                    <div class="desc_wrap">
+                                        <div class="title_bx">
+                                            <a href="#">
+                                                <p>마이페이지</p>
+                                            </a>
+                                        </div>
+                                        <div class="depth02_box">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">마이페이지</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="form-modal" style="display: none;">
+    <div class="form-back"></div>
+        <div class="form-toggle">
+            <button id="login-toggle" onclick="toggleLogin()">log in</button>
+            <button id="signup-toggle" onclick="toggleSignup()">sign up</button>
+        </div>
+    
+        <div id="login-form">
+            <form>
+                <input type="text" placeholder="Enter email or username"/>
+                <input type="password" placeholder="Enter password"/>
+                <button type="button" class="btn login">login</button>
+                <p><a href="javascript:void(0)">Forgotten account</a></p>
+                <hr/>
+                <button type="button" class="btn -box-sd-effect"> <i class="fa fa-google fa-lg" aria-hidden="true"></i> sign in with google</button>
+                <button type="button" class="btn -box-sd-effect"> <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i> sign in with linkedin</button>
+                <button type="button" class="btn -box-sd-effect"> <i class="fa fa-windows fa-lg" aria-hidden="true"></i> sign in with microsoft</button>
+            </form>
+        </div>
+    
+        <div id="signup-form">
+            <form>
+                <input type="email" placeholder="Enter your email"/>
+                <input type="text" placeholder="Choose username"/>
+                <input type="password" placeholder="Create password"/>
+                <button type="button" class="btn signup">create account</button>
+                <p>Clicking <strong>create account</strong> means that you are agree to our <a href="javascript:void(0)">terms of services</a>.</p>
+                <hr/>
+                <button type="button" class="btn -box-sd-effect"> <i class="fa fa-google fa-lg" aria-hidden="true"></i> sign up with google</button>
+                <button type="button" class="btn -box-sd-effect"> <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i> sign up with linkedin</button>
+                <button type="button" class="btn -box-sd-effect"> <i class="fa fa-windows fa-lg" aria-hidden="true"></i> sign up with microsoft</button>
+            </form>
+        </div>
+    
+    </div>
+
+    <visual class="visual">
+        <div class="swiper-container visual">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide one">
+                </div>
+                <div class="swiper-slide two">
+                    <video autoplay loop muted id="video-background" id="player_1">
+                        <source src="/pizza/img/visual/video.mp4">
+                    </video>
+                </div>
+            </div>
+
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev button1"></div>
+            <div class="swiper-button-next button2"></div>
+
+
+        </div>
+    </visual>
+    <section class="contents">
+        <div class="con1_bg">
+            <div class="con1">
+                <h2>
+                    <span>오늘 뭐먹지?</span>
+                </h2>
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-1">추천메뉴</li>
+                    <li class="tab-link" data-tab="tab-2">오리지널</li>
+                    <li class="tab-link" data-tab="tab-3">세트메뉴</li>
+                    <li class="tab-link" data-tab="tab-4">1+1</li>
+                    <li class="tab-link" data-tab="tab-5">반반피자</li>
+
+                </ul>
+
+                <div id="tab-1" class="tab-content current clearfix">
+                    <div class="slider-div">
+                        <div class="con1_bx1">
+                            <img src="/pizza/img/contents/sec1/product1.png" alt="" class="img_11">
+                            <h3>아이유의Pick피자(L)</h3>
+                            <h4>M 27,900원</h4>
+                            <a href="#">선택<span>하기</span></a>
+                        </div>
+                        <div class="con1_bx2">
+                            <img src="/pizza/img/contents/sec1/product2.png" alt="" class="img_12">
+                            <h3>더블포크쉬림프 콘치즈피자</h3>
+                            <h4>R 20,900원 L 22,900원</h4>
+                            <a href="#">선택<span>하기</span></a>
+                        </div>
+                        <div class="con1_bx3">
+                            <img src="/pizza/img/contents/sec1/product3.png" alt="" class="img_13">
+                            <h3>고스트 페파로니피자</h3>
+                            <h4>R 15,900원 L 17,900원</h4>
+                            <a href="#">선택<span>하기</span></a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div id="tab-2" class="tab-content">
+                    <div class="con1_bx1">
+                        <img src="/pizza/img/contents/sec1/tab2_img1.png" alt="" class="img_11">
+                        <h3>콤비네이션</h3>
+                        <h4>R 14,900원 L 16,900원</h4>
+                        <a href="#">선택<span>하기</span></a>
+                    </div>
+                    <div class="con1_bx2">
+                        <img src="/pizza/img/contents/sec1/tab2_img2.png" alt=""class="img_12">
+                        <h3>불고기피자</h3>
+                        <h4>R 14,900원 L 16,900원</h4>
+                        <a href="#">선택<span>하기</span></a>
+                    </div>
+                    <div class="con1_bx3">
+                        <img src="/pizza/img/contents/sec1/tab2_img3.png" alt=""class="img_13">
+                        <h3>치즈피자</h3>
+                        <h4>R 14,900원 L 16,900원</h4>
+                        <a href="#">선택<span>하기</span></a>
+                    </div>
+                </div>
+                <div id="tab-3" class="tab-content">
+                    <div class="con1_bx1">
+                        <img src="/pizza/img/contents/sec1/tab3_img1.png" alt=""class="img_11">
+                        <h3>스위트박스 1</h3>
+                        <h4>M 26,900원</h4>
+                        <a href="#">선택<span>하기</span></a>
+                    </div>
+                    <div class="con1_bx2">
+                        <img src="/pizza/img/contents/sec1/tab3_img2.png" alt=""class="img_12">
+                        <h3>스위트박스 2</h3>
+                        <h4>M 30,900원</h4>
+                        <a href="#">선택<span>하기</span></a>
+                    </div>
+                    <div class="con1_bx3">
+                        <img src="/pizza/img/contents/sec1/tab3_img3.png" alt=""class="img_13">
+                        <h3>SET 1</h3>
+                        <h4>M 20,500원</h4>
+                        <a href="#">선택<span>하기</span></a>
+                    </div>
+
+                </div>
+                <div id="tab-4" class="tab-content">
+                    <div class="con1_bx1">
+                        <img src="/pizza/img/contents/sec1/tab4_img1.png" alt=""class="img_11">
+                        <h3>반반피자</h3>
+                        <h4>R 23,900원</h4>
+                        <a href="#">선택<span>하기</span></a>
+                    </div>
+                    <div class="con1_bx2">
+                        <img src="/pizza/img/contents/sec1/tab4_img1.png" alt=""class="img_12">
+                        <h3>반반피자</h3>
+                        <h4>XL 31,900원</h4>
+                        <a href="#">선택<span>하기</span></a>
+                    </div>
+                    <div class="con1_bx3">
+                        <img src="/pizza/img/contents/sec1/tab4_img1.png" alt=""class="img_13">
+                        <h3>반반피자</h3>
+                        <h4>L 27,900원</h4>
+                        <a href="#">선택<span>하기</span></a>
+                    </div>
+                </div>
+                <div id="tab-5" class="tab-content">
+                    <div class="con1_bx1">
+                        <img src="/pizza/img/contents/sec1/mo/img4.png" alt=""class="img_11">
+                        <h3>오리지널 피자 R+오리지널 피자 R</h3>
+                        <h4>M 23,900원</h4>
+                        <a href="#">선택<span>하기</span></a>
+                    </div>
+                    <div class="con1_bx2">
+                        <img src="/pizza/img/contents/sec1/mo/img4.png" alt=""class="img_12">
+                        <h3>오리지널 피자 XL+오리지널 피자 XL</h3>
+                        <h4>M 27,900원</h4>
+                        <a href="#">선택<span>하기</span></a>
+                    </div>
+                    <div class="con1_bx3">
+                        <img src="/pizza/img/contents/sec1/mo/img4.png" alt=""class="img_13">
+
+                        <h3>오리지널 피자 L+오리지널 피자 L</h3>
+                        <h4>M 27,900원</h4>
+                        <a href="#">선택<span>하기</span></a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="con2">
+            <div class="wrapper">
+                <div class="dis_tb1">
+                    <div class="dis_cel bx_title">
+                        <div class="wrap">
+                            <p class="desc">트렌드를 반영한</p>
+                            <p class="title">
+                                <img src="/pizza/img/contents/sec2/menu.png" alt="메뉴">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="dis_cel bx_menu1">
+                        <div class="wrap">
+                            <div class="bg">
+                                <img src="/pizza/img/contents/sec2/img1.png" alt="">
+                                <img src="/pizza/img/contents/sec2/img11.png" alt="" class="pop">
+
+                            </div>
+                            <div class="txt_bx">
+                                <p class="tit">인기 '핫'메뉴</p>
+                                <p class="txt">아직먹어보지 않았다면<br>대화가 안되는 치킨</p>
+                                <p class="btn">
+                                    <a href="#">메뉴보기</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dis_cel bx_menu2">
+                        <div class="wrap">
+                            <div class="bg"><img src="/pizza/img/contents/sec2/img2.png" alt=""></div>
+                            <div class="txt_bx">
+                                <p class="tit">프리미엄 피자</p>
+                                <p class="txt">
+                                    천연발효종을 넣은 생도우에 프리미엄<br>토핑을 얹어 특별하게 즐기는 피자
+                                </p>
+                                <p class="btn">
+                                    <a href="#">메뉴보기</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--dis_tb1-->
+                <div class="dis_tb1">
+                    <div class="dis_cel bx_menu3">
+                        <div class="wrap">
+                            <div class="bg">
+                                <img src="/pizza/img/contents/sec2/img3.png" alt="">
+                            </div>
+                            <div class="txt_bx">
+                                <p class="tit">1인용 피자</p>
+                                <p class="txt">
+                                    미스터피자의<br>BEST 제품을 한손에 담았다!
+                                </p>
+                                <p class="btn"><a href="#">메뉴보기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dis_cel bx_menu4">
+                        <div class="wrap">
+                            <div class="bg">
+                                <img src="/pizza/img/contents/sec2/img4.png" alt="">
+                            </div>
+                            <div class="txt_bx">
+                                <p class="tit">사이드</p>
+                                <p class="txt">미스터피자 샐러드바를 집에서 간편하게<br>즐기는 샐러드와 부담 없이 즐기는 사이드 메뉴</p>
+                                <p class="btn">
+                                    <a href="#">메뉴보기</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--dis_tb1-->
+            </div>
+            <!--wrapper-->
+        </div>
+        <!--con2-->
+        <div class="mosec2bx">
+
+            <div class="mobg">
+                <div class="wrap">
+                    <p class="desc">트렌드를 반영한</p>
+                    <p class="title">
+                        <img src="/pizza/img/contents/sec2/menu.png" alt="메뉴">
+                    </p>
+                </div>
+                <div class="mobgbx1">
+                    <div class="img1_wrap">
+                        <div class="bg">
+                            <img src="/pizza/img/contents/sec2/mo/img1.jpg" alt="">
+                        </div>
+                        <div class="txt_bx1">
+                            <p class="tit">인기 '핫' 메뉴</p>
+                            <p class="txt">아직먹어보지 않았다면<br>강력추천 피자</p>
+                            <p class="btn"><a href="#">메뉴보기</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobgbx2">
+                    <div class="img2_wrap">
+                        <div class="bg">
+                            <img src="/pizza/img/contents/sec2/mo/img2.jpg" alt="">
+                        </div>
+                        <div class="txt_bx2">
+                            <p class="tit">프리미엄 피자</p>
+                            <p class="txt">천연발효종을 넣은 생도우에 프리미엄<br>토핑을 얹어 특별하게 즐기는 피자</p>
+                            <p class="btn"><a href="#">메뉴보기</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobgbx3">
+                    <div class="img3_wrap">
+                        <div class="bg">
+                            <img src="/pizza/img/contents/sec2/mo/img3.jpg" alt="">
+                        </div>
+                        <div class="txt_bx3">
+                            <p class="tit">사이드</p>
+                            <p class="txt">미스터피자 샐러드바를 집에서 간편하게<br>즐기는 샐러드와 부담 없이 즐기는 사이드 메뉴</p>
+                            <p class="btn"><a href="#">메뉴보기</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobgbx4">
+                    <div class="img4_wrap">
+                        <div class="bg">
+                            <img src="/pizza/img/contents/sec2/mo/img4.jpg" alt="">
+                        </div>
+                        <div class="txt_bx4">
+                            <p class="tit">1인용 피자</p>
+                            <p class="txt">미스터 피자의<br>BEST 제품을 한손에 담았다!</p>
+                            <p class="btn"><a href="#">메뉴보기</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="con3">
+                <div class="title_bx">
+                    <p class="tit">고객</p>
+                    <p class="tit1">과 소통하다</p>
+                    <p class="desc">SNS Network</p>
+                </div>
+                <div class="sns_intro">
+                    <ul class="clearfix">
+                        <li>
+                            <dl>
+                                <dt><img src="/pizza/img/contents/sec3/sns_facebook.png" alt=""></dt>
+                                <dd>
+                                    <p class="sns_id">@mspizza</p>
+                                    <p class="sns_sort"><span>26,543</span>"Follow"</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><img src="/pizza/img/contents/sec3/sns_blog.png" alt=""></dt>
+                                <dd>
+                                    <p class="sns_id">mspizzablog</p>
+                                    <p class="sns_sort"><span>36,294</span>"Follow"</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><img src="/pizza/img/contents/sec3/sns_instagram.png" alt=""></dt>
+                                <dd>
+                                    <p class="sns_id">#pizza_ms</p>
+                                    <p class="sns_sort"><span>99,999</span>"Follow"</p>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sns_slide d-block">
+                    <div class="swiper-container h1">
+                        <div class="swiper-wrapper">
+                            
+                            <div class="swiper-slide one1 sns" >
+                                <a href="//www.instagram.com/dominostory/" target="_blank"class="img_wrap">
+                                    <div class="img_slide" alt="피자사진"></div>
+                                    <div class="img_text">
+                                        <p class="tit">#도미노피자 에서 #페퍼로니피자를 즐길수 있는 기회</p>
+                                        <p class="sub">#인스타그램</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide one2 sns" >
+                                <a href="//www.instagram.com/dominostory/" target="_blank"class="img_wrap">
+                                    <div class="img_slide" alt="피자사진"></div>
+                                    <div class="img_text">
+                                        <p class="tit">#도미노피자 에서 #페퍼로니피자를 즐길수 있는 기회</p>
+                                        <p class="sub">#인스타그램</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide one3 sns" >
+                                <a href="//www.instagram.com/dominostory/" target="_blank"class="img_wrap">
+                                    <div class="img_slide" alt="피자사진"></div>
+                                    <div class="img_text">
+                                        <p class="tit">#도미노피자 에서 #페퍼로니피자를 즐길수 있는 기회</p>
+                                        <p class="sub">#인스타그램</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide one4 sns" >
+                                <a href="//www.instagram.com/dominostory/" target="_blank"class="img_wrap">
+                                    <div class="img_slide" alt="피자사진"></div>
+                                    <div class="img_text">
+                                        <p class="tit">#도미노피자 에서 #페퍼로니피자를 즐길수 있는 기회</p>
+                                        <p class="sub">#인스타그램</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide one5 sns" >
+                                <a href="//www.instagram.com/dominostory/" target="_blank"class="img_wrap">
+                                    <div class="img_slide" alt="피자사진"></div>
+                                    <div class="img_text">
+                                        <p class="tit">#도미노피자 에서 #페퍼로니피자를 즐길수 있는 기회</p>
+                                        <p class="sub">#인스타그램</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide one6 sns" >
+                                <a href="//www.instagram.com/dominostory/" target="_blank"class="img_wrap">
+                                    <div class="img_slide" alt="피자사진"></div>
+                                    <div class="img_text">
+                                        <p class="tit">#도미노피자 에서 #페퍼로니피자를 즐길수 있는 기회</p>
+                                        <p class="sub">#인스타그램</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide one7 sns" >
+                                <a href="//www.instagram.com/dominostory/" target="_blank"class="img_wrap">
+                                    <div class="img_slide"alt="피자사진"></div>
+                                    <div class="img_text">
+                                        <p class="tit">#도미노피자 에서 #페퍼로니피자를 즐길수 있는 기회</p>
+                                        <p class="sub">#인스타그램</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide one8 sns" >
+                                <a href="//www.instagram.com/dominostory/" target="_blank"class="img_wrap">
+                                    <div class="img_slide"alt="피자사진"></div>
+                                    <div class="img_text">
+                                        <p class="tit">#도미노피자 에서 #페퍼로니피자를 즐길수 있는 기회</p>
+                                        <p class="sub">#인스타그램</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide one9 sns" >
+                                <a href="//www.instagram.com/dominostory/" target="_blank"class="img_wrap">
+                                    <div class="img_slide"alt="피자사진"></div>
+                                    <div class="img_text">
+                                        <p class="tit">#도미노피자 에서 #페퍼로니피자를 즐길수 있는 기회</p>
+                                        <p class="sub">#인스타그램</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide one10 sns" >
+                                <a href="//www.instagram.com/dominostory/" target="_blank"class="img_wrap">
+                                    <div class="img_slide"alt="피자사진"></div>
+                                    <div class="img_text">
+                                        <p class="tit">#도미노피자 에서 #페퍼로니피자를 즐길수 있는 기회</p>
+                                        <p class="sub">#인스타그램</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next button3"></div>
+                        <div class="swiper-button-prev button4"></div>
+
+
+                    </div>
+                </div>
+                <div class="mo_sns d-none">
+                    <div class="swiper-container h2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide one11 mo">
+                                <a href="//www.instagram.com/dominostory/" target="_blank"class="img_wrap">
+                                    <div class="img_slide"alt="피자사진"></div>
+                                    <div class="img_text">
+                                        <p class="tit">#도미노피자 에서 #페퍼로니피자를 즐길수 있는 기회</p>
+                                        <p class="sub">#인스타그램</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide one22 mo">
+                                <a href="//www.instagram.com/dominostory/" target="_blank"class="img_wrap">
+                                    <div class="img_slide"alt="피자사진"></div>
+                                    <div class="img_text">
+                                        <p class="tit">#도미노피자 에서 #페퍼로니피자를 즐길수 있는 기회</p>
+                                        <p class="sub">#인스타그램</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide one33 mo">
+                                <a href="//www.instagram.com/dominostory/" target="_blank"class="img_wrap">
+                                    <div class="img_slide"alt="피자사진"></div>
+                                    <div class="img_text">
+                                        <p class="tit">#도미노피자 에서 #페퍼로니피자를 즐길수 있는 기회</p>
+                                        <p class="sub">#인스타그램</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide one44 mo">
+                                <a href="//www.instagram.com/dominostory/" target="_blank"class="img_wrap">
+                                    <div class="img_slide"alt="피자사진"></div>
+                                    <div class="img_text">
+                                        <p class="tit">#도미노피자 에서 #페퍼로니피자를 즐길수 있는 기회</p>
+                                        <p class="sub">#인스타그램</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide one55 mo">
+                                <a href="//www.instagram.com/dominostory/" target="_blank"class="img_wrap">
+                                    <div class="img_slide"alt="피자사진"></div>
+                                    <div class="img_text">
+                                        <p class="tit">#도미노피자 에서 #페퍼로니피자를 즐길수 있는 기회</p>
+                                        <p class="sub">#인스타그램</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide one66 mo">
+                                <a href="//www.instagram.com/dominostory/" target="_blank"class="img_wrap">
+                                    <div class="img_slide"alt="피자사진"></div>
+                                    <div class="img_text">
+                                        <p class="tit">#도미노피자 에서 #페퍼로니피자를 즐길수 있는 기회</p>
+                                        <p class="sub">#인스타그램</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide one77 mo">
+                                <a href="//www.instagram.com/dominostory/" target="_blank"class="img_wrap">
+                                    <div class="img_slide"alt="피자사진"></div>
+                                    <div class="img_text">
+                                        <p class="tit">#도미노피자 에서 #페퍼로니피자를 즐길수 있는 기회</p>
+                                        <p class="sub">#인스타그램</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide one88 mo">
+                                <a href="//www.instagram.com/dominostory/" target="_blank"class="img_wrap">
+                                    <div class="img_slide"alt="피자사진"></div>
+                                    <div class="img_text">
+                                        <p class="tit">#도미노피자 에서 #페퍼로니피자를 즐길수 있는 기회</p>
+                                        <p class="sub">#인스타그램</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide one99 mo">
+                                <a href="//www.instagram.com/dominostory/" target="_blank"class="img_wrap">
+                                    <div class="img_slide"alt="피자사진"></div>
+                                    <div class="img_text">
+                                        <p class="tit">#도미노피자 에서 #페퍼로니피자를 즐길수 있는 기회</p>
+                                        <p class="sub">#인스타그램</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+
+                    </div>
+
+                </div>
+                </div>
+                <div class="con4">
+                    <div class="con4_bg">
+                        <h2></h2>
+                        <div class="con44">
+                            <ul class="clearfix con4_box">
+                                <li>
+                                    <div class="box1">
+                                        <h3>Youtube</h3>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box2">
+                                        <h3>공지사항</h3>
+                                </li>
+                                <li>
+                                    <div class="box3">
+                                        <h3>매장안내</h3>
+                                </li>
+                                <li>
+                                    <div class="box4">
+                                        <h3>고객의 소리</h3>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+    </section>
+    <footer id="footer">
+        <div class="footer_inner" style="background-color: #f2f2f2;">
+            <ul class="footer_top">
+                <li>개인정보 취급방침</li>
+                <li>이용약관</li>
+            </ul>
+            <ul class="footer_bottom">
+                <li>(주)반올림식품 대표자 : 김김김 / 사용자등록번호 000-00-00000 / 통신판매업신고번호 2021-06-30 / 서울시 00구 00로 0길 00-00<br>온라인주문 고객센터 : 0000-0000 (상담시간 : 연중무휴 오전11시~오후23시까지) / 창업문의 : 0000-0000 (상담시간 : 평일 오전 10시~오후 5시까지)<br>(c)2020BANOLIMFOOD ALL RIGHTS RESERVED</li>
+            </ul>
+        </div>
+    </footer>
+</div>
+<!-- PC슬라이드 -->
+    <script>
+        var swiper = new Swiper('.swiper-container.h1', {
+            slidesPerView: 5,
+            loop: true,
+            direction: getDirection(),
+            centeredSlides: true, 
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            on: {
+                resize: function () {
+
+                }
+            }
+        });
+
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+            return direction;
+        }
+    </script>
+    <!-- 모바일슬라이드 -->
+    <script>
+        var swiper = new Swiper('.swiper-container.h2', {
+            slidesPerView: 1,
+            loop: true,
+           
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+<!-- 비주얼슬라이드 -->
+    <script>
+        var mySwiper = new Swiper('.swiper-container.visual', {
+            loop: true,
+            speed: 400,
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+    </script>
+    <!-- 로그인 폼태그 -->
+    <script>
+        function toggleSignup(){
+   document.getElementById("login-toggle").style.backgroundColor="#fff";
+    document.getElementById("login-toggle").style.color="#222";
+    document.getElementById("signup-toggle").style.backgroundColor="#57b846";
+    document.getElementById("signup-toggle").style.color="#fff";
+    document.getElementById("login-form").style.display="none";
+    document.getElementById("signup-form").style.display="block";
+}
+
+function toggleLogin(){
+    document.getElementById("login-toggle").style.backgroundColor="#57B846";
+    document.getElementById("login-toggle").style.color="#fff";
+    document.getElementById("signup-toggle").style.backgroundColor="#fff";
+    document.getElementById("signup-toggle").style.color="#222";
+    document.getElementById("signup-form").style.display="none";
+    document.getElementById("login-form").style.display="block";
+}
+
+    </script>
+</body>
+
+</html>
