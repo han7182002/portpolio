@@ -4,7 +4,7 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "start": "node index.html"
+    "start": "vue-cli-service serve"
   },
   "author": "",
   "license": "ISC",
@@ -19,5 +19,8 @@
     "url": "https://github.com/han7182002/portpolio/issues"
   },
   "homepage": "https://github.com/han7182002/portpolio#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@vue/cli": "^5.0.8"
+  }
 }
