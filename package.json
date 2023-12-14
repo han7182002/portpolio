@@ -2,15 +2,17 @@
   "name": "portpolio",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
   "scripts": {
-    "start": "vue-cli-service serve"
+    "start": "serve"
   },
   "author": "",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/han7182002/portpolio.git"
+    "url": "https://github.com/han7182002/portpolio.git"
   },
   "keywords": [
     "portpolio"
