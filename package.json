@@ -1,0 +1,23 @@
+{
+  "name": "portpolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/han7182002/portpolio.git"
+  },
+  "keywords": [
+    "portpolio"
+  ],
+  "bugs": {
+    "url": "https://github.com/han7182002/portpolio/issues"
+  },
+  "homepage": "https://github.com/han7182002/portpolio#readme",
+  "description": ""
+}
