@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
-    "serve": "^14.2.1"
+    "node-sass": "^9.0.0",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "serve": "^14.2.1",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   },
   "scripts": {
-    "dev": "serve"
+    "dev": "serve",
+    "build:dev": "sass /asset/scss/page/intro.scss dev/css/page/intro.css",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
