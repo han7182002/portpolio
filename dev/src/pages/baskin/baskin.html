@@ -4,23 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>베스킨 라빈스</title>
-    <link rel="stylesheet" href="../../asset/scss/style.scss">
+    <link rel="stylesheet" href="../../assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   </head>
   <body>
-    <header>
-  <div class="header__content">
-    <h1 class="header__logo"><span class="blind">베스킨 라빈스 로고</span></h1>
-    <ul class="header__menu">
-      <li class="header__list">Menu</li>
-      <li class="header__list">BR Play</li>
-      <li class="header__list">BR Story</li>
-      <li class="header__list">Delivery/Store</li>
-    </ul>
-  </div>
-  <div class="header__content">
-    <div class="serch"></div>
-    <button class="my-page"></button>
+    <div class="beskin-wrap">
+    <header class="header">
+  <div class="header__inner">
+    <div class="header__content">
+      <h1 class="header__logo">
+        <a href="#" class="header__link">
+          <div class="img-box">
+            <img src="../../../assets/img/baskin/h_logo.png" alt="메인 로고" />
+          </div>
+        </a>
+      </h1>
+      <ul class="header__menu">
+        <li class="header__list"><a href="#" class="header__link">Menu</a></li>
+        <li class="header__list"><a href="#" class="header__link">BR Play</a></li>
+        <li class="header__list"><a href="#" class="header__link">BR Story</a></li>
+        <li class="header__list"><a href="#" class="header__link">Delivery/Store</a></li>
+      </ul>
+    </div>
+    <div class="header__content">
+      <div class="serch">
+        <div class="site-search">
+          <div class="site-search__container">
+            <div class="site-search__content">
+              <button type="button" class="site-search__close">
+                <span class="site-search__close-text">close</span>
+              </button>
+            </div>
+          </div>
+          <div class="site-search__container">
+            <div class="site-search__content">
+              <form action="/search/list.php" class="site-search__form">
+                <fieldset>
+                  <legend>제품 검색 폼</legend>
+
+                  <div class="site-search__box">
+                    <input type="text" name="findword" class="site-search__input" placeholder="제품명을 입력하세요" />
+
+                    <button type="button" class="site-search__delete">
+                      <span class="site-search__hidden">삭제</span>
+                    </button>
+
+                    <button type="submit" class="site-search__submit">
+                      <span class="site-search__hidden">검색</span>
+                    </button>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="my-page"></button>
+    </div>
   </div>
 </header>
    <section class="main-kv">
@@ -56,6 +96,7 @@
   <input type="button" class="ui-button ui-button-lorange" value="橙色大按钮" />
 
 
+  </div>
   </body>
   <script>
 

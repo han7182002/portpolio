@@ -1,0 +1,42 @@
+.beskin-wrap {
+  //헤더
+  .header {
+    background-color: #f986bd;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      max-width: var(--size-pc);
+      margin: 0 auto;
+      align-items: center;
+    }
+    &__content {
+      // 로고
+      display: flex;
+      .header__logo {
+        .header__link {
+          .img-box {
+            width: 5rem;
+            height: 5rem;
+          }
+        }
+      }
+      .header__menu {
+        display: flex;
+        align-items: center;
+        .header__list {
+          .header__link {
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 20;
+            padding: 1rem;
+            color: #fff;
+            font-size: 1.3rem;
+            transition: color 0.3s ease;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+  }
+}

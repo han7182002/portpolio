@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.blind {
+  display: none;
+}
+
+@import './page/common';
+// 마이페이지
+@import './page/intro';
+@import './page/baskin';
+@import './page/reset';
+@import './page/normalize';
