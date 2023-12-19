@@ -3,22 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
-    "node-sass": "^9.0.0",
-    "sass": "^1.69.5",
-    "sass-loader": "^13.3.2",
     "serve": "^14.2.1",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
+    "style-loader": "^3.3.3"
   },
   "scripts": {
     "dev": "serve",
-    "build:dev": "sass /asset/scss/page/intro.scss dev/css/page/intro.css",
-    "build": "webpack"
+    "start": "gulp",
+    "build": "gulp build"
   },
   "author": "",
   "license": "ISC",
   "repository": {
-    "type": "git",
+    "type": "module",
     "url": "https://github.com/han7182002/portpolio.git"
   },
   "keywords": [
@@ -30,6 +26,23 @@
   "homepage": "https://github.com/han7182002/portpolio#readme",
   "description": "",
   "dependencies": {
-    "@vue/cli": "^5.0.8"
+    "@vue/cli": "^5.0.8",
+    "browser-sync": "^2.29.3",
+    "del": "4.1.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "ftp-deploy": "^2.4.2",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^0.10.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-pretty-html": "^2.0.10",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^4.0.1",
+    "sass": "^1.50.1"
   }
 }
