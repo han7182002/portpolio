@@ -74,15 +74,86 @@
 
   //main-kv
   .main-kv {
+    margin-top: -0.2vw;
+    height: 47.9vw;
     &::after {
       content: '';
       position: absolute;
       top: 0;
       left: 0;
-      display: block;
-      background: url('../../img/baskin/bg_hero.jpg') no-repeat;
+      z-index: -1;
       width: 100%;
       height: 100%;
+      background: url('../../../assets/img/baskin/bg_hero.jpg') repeat;
+    }
+    &__content {
+      position: relative;
+      margin: 0 auto;
+      width: 75.5vw;
+      height: 45.8vw;
+      padding-top: 4.9vw;
+      box-sizing: border-box;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 78.1vw;
+        height: 43.9vw;
+        transform: translateX(-50%);
+        background: url('../../../assets/img/baskin/bg_hero_frame-1.png') no-repeat left top/contain;
+      }
+      .main-kv__box {
+        position: relative;
+        overflow: hidden;
+        border-radius: 17.4rem;
+        .main-kv__link {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 10;
+          width: 100%;
+          height: 100%;
+        }
+        .img-box {
+          width: 100%;
+          height: 38vw;
+        }
+      }
+      .main-kv__list {
+        position: absolute;
+        top: 10rem;
+        right: 5rem;
+        z-index: 22;
+        .main-kv__item {
+          margin-bottom: 1.8rem;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  //promotion
+  .promotion {
+    padding: 9rem;
+    &__tit {
+      color: #ff5484;
+      font-weight: 700;
+      font-size: 50px;
+      text-align: center;
+      line-height: 1;
+    }
+    &__des {
+      margin-top: 8px;
+      color: #858585;
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .swiper {
     }
   }
 }
